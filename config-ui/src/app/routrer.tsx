@@ -34,6 +34,9 @@ import {
   Pipelines,
   Pipeline,
   ApiKeys,
+  TemplateHome,
+  TemplateForm,
+  TemplatePreview,
   NotFound,
 } from '@/routes';
 
