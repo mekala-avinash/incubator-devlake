@@ -75,13 +75,13 @@ func (TemplateGenerator) ApiResources() map[string]map[string]plugin.ApiResource
 }
 
 // Init initializes the plugin
-func (t *TemplateGenerator) Init(basicRes context.BasicRes) errors.Error {
+func (TemplateGenerator) Init(basicRes context.BasicRes) errors.Error {
 	// Initialize any required resources
 	return nil
 }
 
 // MigrationScripts returns the migration scripts for the plugin
-func (t *TemplateGenerator) MigrationScripts() []plugin.MigrationScript {
+func (TemplateGenerator) MigrationScripts() []plugin.MigrationScript {
 	return []plugin.MigrationScript{
 		new(models.InitSchemas),
 	}
