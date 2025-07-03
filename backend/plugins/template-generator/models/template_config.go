@@ -24,6 +24,13 @@ import (
 // InitSchemas references the migration scripts
 type InitSchemas = migrationscripts.InitSchemas
 
+import (
+	"time"
+
+	"github.com/apache/incubator-devlake/core/models/common"
+	"github.com/google/uuid"
+)
+
 // TemplateConfig represents a saved template configuration
 type TemplateConfig struct {
 	common.NoPKModel
