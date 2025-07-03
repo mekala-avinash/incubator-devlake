@@ -26,27 +26,15 @@ import (
 )
 
 // TemplateGenerator is the main implementation of the template-generator plugin
-type TemplateGenerator struct {
-	name        string
-	description string
+type TemplateGenerator struct{}
+
+// Make sure TemplateGenerator satisfies the PluginMeta interface
+func (TemplateGenerator) Description() string {
+	return "Generate DevOps templates with best practices"
 }
 
-// NewTemplateGenerator creates a new instance of the template generator plugin
-func NewTemplateGenerator() *TemplateGenerator {
-	return &TemplateGenerator{
-		name:        "template-generator",
-		description: "Generate DevOps templates with best practices",
-	}
-}
-
-// Description returns the plugin description
-func (t *TemplateGenerator) Description() string {
-	return t.description
-}
-
-// Name returns the plugin name
-func (t *TemplateGenerator) Name() string {
-	return t.name
+func (TemplateGenerator) Name() string {
+	return "template-generator"
 }
 
 // GetTablesInfo returns the table information for the plugin
