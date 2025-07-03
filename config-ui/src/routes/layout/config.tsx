@@ -26,6 +26,7 @@ import {
   ApiOutlined,
   GithubOutlined,
   SlackOutlined,
+  CodeOutlined,
 } from '@ant-design/icons';
 
 import { DOC_URL } from '@/release';
