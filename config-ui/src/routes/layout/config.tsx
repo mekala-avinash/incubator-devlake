@@ -52,6 +52,11 @@ export const menuItems: MenuItem[] = [
     icon: <AppstoreOutlined />,
   },
   {
+    key: `${PATH_PREFIX}/templates`,
+    label: 'Templates',
+    icon: <CodeOutlined />,
+  },
+  {
     key: `${PATH_PREFIX}/advanced`,
     label: 'Advanced',
     icon: <ExperimentOutlined />,
