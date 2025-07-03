@@ -38,7 +38,7 @@ func (TemplateGenerator) Name() string {
 }
 
 // GetTablesInfo returns the table information for the plugin
-func (t *TemplateGenerator) GetTablesInfo() []plugin.Tabler {
+func (TemplateGenerator) GetTablesInfo() []plugin.Tabler {
 	return []plugin.Tabler{
 		&models.TemplateConfig{},
 		&models.TemplateCategory{},
@@ -47,7 +47,7 @@ func (t *TemplateGenerator) GetTablesInfo() []plugin.Tabler {
 }
 
 // ApiResources returns the API resources for the plugin
-func (t *TemplateGenerator) ApiResources() map[string]map[string]plugin.ApiResourceHandler {
+func (TemplateGenerator) ApiResources() map[string]map[string]plugin.ApiResourceHandler {
 	return map[string]map[string]plugin.ApiResourceHandler{
 		"categories": {
 			"GET": api.GetCategories,
