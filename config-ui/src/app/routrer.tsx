@@ -111,6 +111,23 @@ export const router = createBrowserRouter([
         path: 'keys',
         element: <ApiKeys />,
       },
+      {
+        path: 'templates',
+        children: [
+          {
+            index: true,
+            element: <TemplateHome />,
+          },
+          {
+            path: ':category',
+            element: <TemplateForm />,
+          },
+          {
+            path: ':category/:templateId/preview',
+            element: <TemplatePreview />,
+          },
+        ],
+      },
     ],
   },
   {
