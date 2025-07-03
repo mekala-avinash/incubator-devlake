@@ -18,11 +18,11 @@ limitations under the License.
 package models
 
 import (
-	"time"
-
-	"github.com/apache/incubator-devlake/core/models/common"
-	"github.com/google/uuid"
+	"github.com/apache/incubator-devlake/plugins/template-generator/models/migrationscripts"
 )
+
+// InitSchemas references the migration scripts
+type InitSchemas = migrationscripts.InitSchemas
 
 // TemplateConfig represents a saved template configuration
 type TemplateConfig struct {
