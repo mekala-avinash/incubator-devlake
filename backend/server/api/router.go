@@ -36,7 +36,8 @@ import (
         "github.com/apache/incubator-devlake/server/api/project"
         "github.com/apache/incubator-devlake/server/api/push"
         "github.com/apache/incubator-devlake/server/api/shared"
-        "github.com/apache/incubator-devlake/server/api/task"
+        "        "github.com/apache/incubator-devlake/server/api/task"
+        "github.com/apache/incubator-devlake/server/api/metrics""
         "github.com/apache/incubator-devlake/server/services"
 
         "github.com/gin-gonic/gin"
